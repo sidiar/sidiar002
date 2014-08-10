@@ -1,0 +1,41 @@
+<div class="result_item"  >
+    <span class="title"><?= utf8_encode($this->nombre); ?></span>
+    <div class="clearfix"></div>
+    <a class="web" href="<?= $this->url; ?>" target="_blank"><?= $this->url; ?></a>
+    <div class="categories" >
+        
+        <?php 
+        if (!empty($this->sucursales)>0) {
+        ?>
+            <div><label>Localización: </label><?= utf8_encode($this->sucursales);?></div>
+        <?php
+        } ?>
+        <?php 
+        if (!empty($this->sectores)>0) {
+        ?>
+            <div><label>Sectores: </label><?= utf8_encode($this->sectores);?></div>
+        <?php
+        } ?>
+            
+            
+        <?php 
+        if (!empty($this->publicos)>0) {
+        ?>
+            <div><label>Targets: </label><?= utf8_encode($this->publicos);?></div>
+        <?php
+        } ?>
+    
+        
+            
+    </div>
+    
+    <div class="description"><?= utf8_encode($this->descripcion); ?></div>
+
+<?php
+if (!isset($this->last_id)) { ?>
+<hr class="result_separator">
+<?php } else { ?>
+<p>&nbsp;</p><p>&nbsp;</p>
+<?php }?>
+
+</div>

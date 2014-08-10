@@ -1,0 +1,24 @@
+
+
+<?php
+
+foreach ($this->iniciativas as $publico => $iniciativas):
+    
+     $iniciativas[count($iniciativas)-1]['last_id'] = 'si';
+    ?>
+    
+    <div class="order-title"><?= utf8_encode($publico); ?></div>
+    <div class="group-results">
+    <?= $this->partialLoop('_iniciativa.phtml',$iniciativas); ?>
+    </div>
+<?php
+endforeach;    
+?>
+
+
+
+<?= $this->paginationControl($this->paginator,
+                                    'Sliding',
+                                    '_pagination.phtml'); ?>
+
+

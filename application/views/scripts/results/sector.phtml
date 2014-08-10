@@ -1,0 +1,29 @@
+<?php
+
+
+?>
+
+<?php
+
+foreach ($this->iniciativas as $sector => $iniciativas):
+    
+    /* to not display separator in the last one  */
+
+   $iniciativas[count($iniciativas)-1]['last_id'] = 'si';
+
+    ?>
+    
+    <div class="order-title"><?= utf8_encode($sector); ?></div>
+    <div class="group-results">
+        <?= $this->partialLoop('_iniciativa.phtml',$iniciativas); ?>        
+    </div>
+    
+<?php
+endforeach;    
+?>
+
+
+
+<?= $this->paginationControl($this->paginator,
+                                    'Sliding',
+                                    '_pagination.phtml'); ?>

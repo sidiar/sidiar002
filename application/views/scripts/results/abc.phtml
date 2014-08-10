@@ -1,0 +1,18 @@
+<?php
+/* to not display separator in the last one  */
+if (count($this->iniciativas)) {
+    $this->iniciativas[count($this->iniciativas)-1]['last_id'] = 'si';
+}
+?>
+
+
+<?= $this->partialLoop('_iniciativa.phtml', $this->iniciativas); ?>
+
+
+<?= $this->paginationControl($this->paginator,
+                                    'Sliding',
+                                    '_pagination.phtml'); 
+
+
+
+

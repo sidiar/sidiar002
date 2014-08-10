@@ -1,0 +1,429 @@
+
+
+<div class="row">
+
+    <div class="col-md-4">
+
+        <div class="panel panel-filter ">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    Filtrar por :
+                </h4>
+            </div>
+
+            <div class="panel-body">
+
+
+                <div class="input-group" id="opentext-search">
+                    <input type="text" class="form-control" placeholder="Buscar..." id="textSearchTXT">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button" id="textSearchBTN"  ><span class="glyphicon glyphicon-search"></span></button>
+                    </span>
+                </div>
+
+
+
+                <button class="btn btn-default btn-filter btn-block " type="submit" data-toggle="collapse" href="#collapseOne">
+                    <span class="glyphicon glyphicon-chevron-right" id="span-one"> <span class="text-filter">Localización</span></span> 
+                </button>
+
+
+
+                <div id="collapseOne" class="filter-collapse-panel collapse">
+                    <ul>   
+                        <li>
+                            <select id="continenteDD" class="form-control">
+                                <option value="0">Todo</option>
+                                <option value="1">África</option>
+                                <option value="2">América</option>
+                                <option value="3">Asia</option>
+                                <option value="4">Europa</option>
+                                <option value="5">Oceania</option>
+                            </select>
+                        </li>                                
+                        <li>
+                            <select id="paisDD" class="form-control" disabled="true">
+                            </select>
+                        </li>                                
+                        <li>
+                            <select id="localizacionDD" class="form-control" disabled="true">
+                            </select>     
+                        </li>         
+                    </ul>    
+                </div>
+
+
+
+                <button class="btn btn-default btn-filter btn-block " type="submit" data-toggle="collapse" href="#collapseTwo">
+                    <span class="glyphicon glyphicon-chevron-right" id="span-two"> <span class="text-filter">Sector</span></span> 
+                </button>
+
+
+                <div id="collapseTwo" class="filter-collapse-panel collapse  checkbox_list">
+                    <div class="checkbox_item">
+                        <input id="checkSector0" type="checkbox" name="check" value="0" checked >  
+                        <label for="checkSector0" >Todos</label> 
+                     </div>   
+
+                        <?= $this->partialLoop('_sector_filter_option.phtml',$this->sectores); ?>
+                    
+                </div>                        
+
+
+
+                <button class="btn btn-default btn-filter btn-block " type="submit" data-toggle="collapse" href="#collapseThree">
+                    <span class="glyphicon glyphicon-chevron-right" id="span-three"> <span class="text-filter">Target</span></span> 
+                </button>
+
+                <div id="collapseThree" class=" filter-collapse-panel collapse  checkbox_list">
+                    <div class="checkbox_item">
+                        <input id="checkTarget0" type="checkbox" name="check" value="0" checked >  
+                        <label for="checkTarget0" >Todos</label> 
+                        </div>
+                    
+                       <?= $this->partialLoop('_target_filter_option.phtml',$this->targets); ?>
+                    
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <div class="leftbar_banner">
+            <a href="#"  data-toggle="modal" data-target="#formONG"> <img src="img/banner_MAPA_CAST.jpg"  /> </a>
+        </div>
+    </div>
+    
+    <div class="col-md-7 ">
+
+
+
+        <div id="orderby-panel" >
+            Ordenar por:&nbsp;&nbsp;
+
+            <div id="btn-orderby" class="btn-group ">
+                <button type="button" class="btn btn-default btn-orderby active" value="abc" id="orderby_abc_BTN" >ABC</button>
+                <button type="button" class="btn btn-default btn-orderby " value="localizacion" id="orderby_localizacion_BTN" >Localización</button>
+                <button type="button" class="btn btn-default btn-orderby " value="publico" id="orderby_target_BTN" >Target</button>
+                <button type="button" class="btn btn-default btn-orderby" value="sector"  id="orderby_sector_BTN" ">Sector</button>
+            </div>
+
+        </div>
+
+
+        <div id="resultList">
+
+            
+
+            
+             <?= $this->partialLoop('_iniciativa.phtml',$this->iniciativas); ?>
+
+            <?= $this->paginationControl($this->paginator,
+                                                'Sliding',
+                                                '_pagination.phtml'); ?>
+
+        </div>
+    </div>
+    
+    <div class="col-md-1"></div>
+</div>
+</div>
+
+
+
+<div class="modal fade" id="formONG">
+
+    <div class="panel panel-popup border-success">
+        <div class="panel-heading heading-success">Incribe una empresa social
+
+            <a href="#" class="close_modal" data-dismiss="modal">
+                <span class="glyphicon glyphicon-remove"></span>
+            </a>
+
+        </div>
+
+        <div class="panel-body">
+            <iframe src="https://docs.google.com/forms/d/1Vo5ny0F1fC6G9m5CbjRdUcSePsO9gDnAN9Dqd2FVL80/viewform?embedded=true" width="450" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+            <!--
+            <div class="_popup_loading_messagebox">
+                <span class="glyphicon glyphicon-refresh"></span> Loading
+            </div>
+            
+            <div class="_popup_success_messagebox">
+                <div class="alert alert-success _popup_success_message"></div>
+                <button type="submit" class="btn btn-default _popup_success_btn">Accept</button>
+            </div>
+            <div class="_popup_bodybox">
+                <div class="alert alert-danger _popup_error_messagebox">Invalid date from</div>
+
+                
+
+
+                <br/>
+                <button type="submit" class="btn btn-default _popup_apply_btn">Apply</button>
+                <button type="submit" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+
+            -->
+
+        </div>
+    </div>
+
+
+</div>
+        
+        
+        
+        <!-- Bootstrap core JavaScript
+ ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="/bootstrap/js/bootstrap.min.js"></script>
+        <script>
+            
+            var current_url='/results/abc';
+            
+            function loadPage(page_number) {
+//                alert(current_url);
+                
+                $('#resultList').load(current_url + '/page/' + page_number);
+            }
+            
+            
+            function loadResults() {
+                
+                $('#resultList').css({opacity:0.5});
+                
+                url_results = '/results/' + $('.btn-orderby').filter(".active").val();
+                
+                        
+                if ($('#textSearchTXT').val().length>0) {
+                   url_results += '/text/' + $('#textSearchTXT').val();
+                }
+                
+                if ($('#localizacionDD').val() && $('#localizacionDD').val()!=='0') {
+                    url_results += '/localizacion/' + $('#localizacionDD').val();
+                }
+                else if($('#paisDD').val() && $('#paisDD').val()!=='0') {
+                    url_results += '/pais/' + $('#paisDD').val();
+                    
+                }else if($('#continenteDD').val() && $('#continenteDD').val()!=='0') {
+                    url_results += '/continente/' + $('#continenteDD').val();
+                    
+                }
+                
+                $('.chk_sectores:checked').each(
+                        function(){
+                            url_results += '/sector/' + $(this).val();
+                        }
+                );
+        
+                /* si no hay ninguno chequeado chequeo el Todos */
+                if ($('.chk_sectores:checked').length===0) {
+                    $('#checkSector0').prop('checked', true);
+                }
+                
+                $('.chk_targets:checked').each(
+                        function(){
+                            url_results += '/publico/' + $(this).val();
+                        }
+                );
+        
+                /* si no hay ninguno chequeado chequeo el Todos */
+                if ($('.chk_targets:checked').length===0) {
+                    $('#checkTarget0').prop('checked', true);
+                }
+               
+               current_url = url_results;
+                $('#resultList').load(url_results,function() {
+                    $('#resultList').css({opacity:1});
+                });
+             
+             }
+            
+            
+            
+            /*
+             * DropDownPaises
+             */
+            function loadPaises(e) {
+                
+                $('#paisDD').empty();
+                $('#paisDD').attr('disabled',$(this).val()==='0');
+                resetLocalizaciones(true);
+                if ($(this).val()==='0') {
+                    loadResults();
+                    return;
+                }
+                
+                $.getJSON('/ws/paises/continente/' + $(this).val(),loadPaisesHandler);
+            }
+            
+            function loadPaisesHandler(data) {
+                
+                $('#paisDD').append('<option value=\'0\'>Todos los paises</option>');
+                
+                $.each(data, 
+                    function(i,value) {
+                        $('#paisDD').append($('<option>').text(value['label']).attr('value', value['id']));
+                    }
+                );
+                loadResults();
+            }
+
+            /*
+             * DropDownLocalizaciones
+             */
+
+            function resetLocalizaciones(disable) {
+                $('#localizacionDD').empty();
+                $('#localizacionDD').attr('disabled',disable);
+            }
+            
+            function loadLocalizaciones(e) {
+                resetLocalizaciones($(this).val()==='0');
+                if ($(this).val()==='0') {
+                    loadResults();
+                    return;
+                }
+                
+                $.getJSON('/ws/localizaciones/pais/' + $(this).val(),loadLocalizacionesHandler);
+            }
+            
+            function loadLocalizacionesHandler(data) {
+                
+                $('#localizacionDD').append('<option value=\'0\'>Todas las regiones</option>');
+                $.each(data, 
+                    function(i,value) {
+                        $('#localizacionDD').append($('<option>').text(value['label']).attr('value', value['id']));
+                    }
+                );
+                loadResults();
+            }
+
+            
+            function orderByHandler() {
+                
+                $('#orderby_abc_BTN').attr('class', 'btn btn-default btn-orderby');
+                $('#orderby_localizacion_BTN').attr('class', 'btn btn-default btn-orderby');
+                $('#orderby_target_BTN').attr('class', 'btn btn-default btn-orderby');
+                $('#orderby_sector_BTN').attr('class', 'btn btn-default btn-orderby');
+                
+                $(this).attr('class', 'btn btn-default btn-orderby active');
+                loadResults();
+            }
+            
+            
+            function checkBoxTargetChange(){
+                $('#checkTarget0').attr('checked', false);
+                loadResults();
+            }
+            
+            function checkBoxSectorChange(){
+                $('#checkSector0').attr('checked', false);
+                loadResults();
+            }
+
+            $(document).ready(function() {
+                
+                /*
+                 * Filters Handlers
+                 * 
+                 */
+                $('#continenteDD').change(loadPaises);
+                
+                $('#paisDD').change(loadLocalizaciones);
+                
+                $('#localizacionDD').change(loadResults);
+                
+                $('#textSearchBTN').click(loadResults);
+                
+                 $('#textSearchTXT').keyup(
+                         function(e){
+                            if(e.keyCode === 13)
+                            {
+                                loadResults();
+                            }
+                        });
+
+                $('.chk_sectores').each(
+                        function(){
+                            $(this).change(checkBoxSectorChange);
+                        }
+                );
+
+                
+                $('.chk_targets').each(
+                        function(){
+                             $(this).change(checkBoxTargetChange);
+                        }
+                );
+              
+                /* All Targets button */
+                $('#checkTarget0').change(function() {
+                    
+                    if ($(this).is(':checked')) {
+                        $('.chk_targets').each(function() {
+                            $(this).attr('checked', false );
+                        });
+                        loadResults();
+                    }
+                    
+                });
+                
+              
+                /* All Sector button */
+                $('#checkSector0').change(function() {
+                    
+                    if ($(this).is(':checked')) {
+                        $('.chk_sectores').each(function() {
+                            $(this).attr('checked', false );
+                        });
+                        loadResults();
+                    }
+                    
+                });
+                
+                /*
+                 * Order by
+                 */
+                $('#orderby_abc_BTN').click( orderByHandler );
+                $('#orderby_localizacion_BTN').click( orderByHandler );
+                $('#orderby_target_BTN').click( orderByHandler );
+                $('#orderby_sector_BTN').click( orderByHandler );
+        
+                    
+        
+        
+        
+
+                $('#collapseOne').on('show.bs.collapse', function () {
+                    $("#span-one").attr('class', 'glyphicon glyphicon-chevron-down');
+                });
+                
+                $('#collapseOne').on('hide.bs.collapse', function () {
+                    $("#span-one").attr('class', 'glyphicon glyphicon-chevron-right');
+                });
+
+                $('#collapseTwo').on('show.bs.collapse', function () {
+                    $("#span-two").attr('class', 'glyphicon glyphicon-chevron-down');
+                });
+                
+                $('#collapseTwo').on('hide.bs.collapse', function () {
+                    $("#span-two").attr('class', 'glyphicon glyphicon-chevron-right');
+                });
+                
+                $('#collapseThree').on('show.bs.collapse', function () {
+                    $("#span-three").attr('class', 'glyphicon glyphicon-chevron-down');
+                });
+                
+                $('#collapseThree').on('hide.bs.collapse', function () {
+                    $("#span-three").attr('class', 'glyphicon glyphicon-chevron-right');
+                });
+            });
+        </script>
+
+        
+       

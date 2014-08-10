@@ -1,0 +1,470 @@
+
+/* 
+    Created on : 17-abr-2014, 9:35:51
+    Author     : ariel
+*/
+
+body {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    background: url('../img/common/FUSTA_BLANCA_web2.jpg') #ffffff no-repeat;
+    background-size: cover;
+}
+
+.beta_banner {
+    position:absolute;
+    float:right;
+    right:0px;
+    top:0px;
+    z-index:2;
+}
+
+/*
+*   Common
+*/
+
+.clearfix {clear:both; height:0px; font-size:1px;}
+
+
+.outline_red {
+    outline: red solid thin;
+}
+
+.outline_blue {
+    outline: blue solid thin;
+}
+
+.outline_black {
+    outline: black solid thin;
+}
+
+
+/*
+*   Contenedor principal
+*/
+
+.content {
+    margin: 0 auto;
+    position: relative;
+    // width: 100%; // ignorado
+ 
+}
+.container {
+   max-width: 1024px;
+}
+
+/*
+*   Header
+*/
+
+header {
+    margin-bottom: 15px;
+}
+
+
+
+@media (max-width: 767px) {
+
+    header .header_ship2 {
+    }
+    header .ship2b_logo {
+        width: 30%;
+        
+    }
+    header .map_logo {
+        text-align: center;
+        padding: 0 40px 0 30px;
+        clear: both;
+    }
+    #social_sel_list {
+        display: none;
+        float: left;
+        margin-right: 0px;
+        vertical-align: middle;
+    }
+}
+@media (min-width: 768px){
+  
+    header .ship2b_logo {
+        
+    }
+
+    header .map_logo {
+        text-align: left;
+    }
+    #social_sel_list {
+        padding-top: 38px;
+        margin-right: 25px;
+    }
+}
+header .ship2b_logo {
+    float: right;
+    margin-top: -30px;
+}
+.header_ship2 {
+}
+
+
+header .map_logo {
+}
+
+
+
+
+
+header .social {
+    float: right;
+
+}
+
+
+#social_sel_list {
+    float: right;
+    
+}
+
+#social_sel_list ul, #social_sel_list li {
+    list-style-type: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#social_sel_list li {
+    display: inline;
+    list-style-type: none;
+}
+#social_sel_list li img {
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+/*
+*  Footer
+*/
+
+footer {
+    margin: 40px 0;
+    text-align: center;
+}
+footer ul {
+    padding: 0;
+}
+footer a {
+    color: #636262;
+}
+footer li {
+    display:inline;
+    list-style-type: none;
+    padding: 0 10px;
+}
+
+
+/*
+*   Contenedor blanco
+*/
+
+.content .content-pad {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 7px;
+    margin-top: 10px;
+    padding: 20px 15px;
+}
+
+
+
+/*
+...................................
+left-bar FILTER
+...................................
+*/ 
+
+.panel-filter {
+    border-color: #3b3b3b;
+    background-color: transparent;
+    // max-width: 260px
+}
+
+.panel-filter > .panel-heading {
+    background-color: #3b3b3b;
+    border-color: #3b3b3b;
+    color: #ffffff;
+}
+
+
+/*-- Texto búsqueda abierta --*/
+
+#opentext-search {
+    margin-bottom: 8px;
+}
+
+
+/*-- Botón desplegar filtros --*/
+
+.btn-filter {
+    background-color: #9d102d;
+    border-color: #9d102d;
+    color: #FFFFFF;
+    text-align: left;
+    padding-left: 10px;
+    margin-bottom: 7px;
+}
+
+.btn-filter .text-filter {
+    font-family:sans-serif;
+    font-weight: bold;
+}
+
+
+/*-- Panel collapse --*/
+
+.filter-collapse-panel ul {
+    padding: 0;
+    list-style: none;
+}
+
+.filter-collapse-panel li {
+    padding-bottom: 5px;
+}
+
+
+/*
+...................................
+central RESULTS
+...................................
+*/ 
+
+.central-part {
+    padding-left: 40px;
+
+}
+
+#resultList {
+    padding-top: 40px;
+}
+
+
+/*-- order group by title --*/
+
+.order-title {
+
+    margin: 0 0 20px 0px; 
+
+    background-color: #009aa6;
+    color: #FFFFFF;
+    border-radius: 16px;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 8px 25px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.group-results {
+    margin-left: 9px;
+}
+
+
+/*-- result item --*/
+
+
+.result_item {
+    padding: 0 15px 0 15px;
+    // max-width: 550px;
+}
+
+.result_item .title {
+    font-size: 20px;
+    color: #009aa6;
+    font-weight: bold;
+}
+.result_item .web {
+    font-size: 14px;
+    color: #9d102d;
+    word-wrap: break-word;
+    
+}
+.result_item .categories {
+    padding-top: 10px;
+    font-size: 14px;
+}
+.result_item .categories label {
+    width: 100px;
+}
+
+.result_item .description {
+    font-style: italic;
+    padding-top: 10px;
+}
+
+
+/*-- result separator --*/
+
+.result_separator {
+    border-top: 2px dotted #aaaaaa;
+    height: 1px;
+    margin: 20px 0  20px;
+    
+}
+
+
+/*-- checkbox options --*/
+
+.checkbox_list {
+    padding: 1px 0 20px 10px;    
+}
+.checkbox_item {
+ margin-top: 10px;   
+}
+
+input[type=checkbox] {  
+    display: none;  
+}  
+
+.checkbox_list label {
+    display: inline-block;  
+    cursor: pointer;  
+    position: relative;  
+    padding-left: 25px;  
+    margin-right: 15px;  
+    font-size: 13px;  
+    font-weight: normal;
+}
+
+.checkbox_list label:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.checkbox_list label:before {  
+    content: "";  
+    display: inline-block;  
+
+    width: 16px;  
+    height: 16px;  
+
+    margin-top: 1px;
+    margin-right: 10px;  
+    position: absolute;  
+    left: 0;  
+    bottombottom: 1px;  
+    background-color: #aaa;  
+    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);  
+    border-radius: 3px;  
+
+}  
+
+.checkbox_list  input[type=checkbox]:checked + label:before {  
+    content: "\2713";  
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);  
+    font-size: 12px;  
+    color: #f3f3f3;  
+    background-color: #9d102d;  
+    text-align: center;  
+    line-height: 15px;  
+    padding-top: 1px;
+}
+
+.checkbox_list  input[type=checkbox]:checked + label {
+    font-weight: bold;
+    color: #9d102d;
+}
+
+/*
+.filter_option.active {
+    background-color: #009aa6;
+    color: #FFFFFF;
+    padding: 3px 0 3px 8px;
+    
+}
+
+.filter_option.normal {
+    color: #009aa6;
+    text-decoration: underline;
+}
+
+.filter_option.normal:hover {
+    color: #009aa6;
+    text-decoration: underline;
+}
+
+*/
+
+
+/*
+.order-title {
+
+    margin: 0 0 20px -24px; 
+        
+    
+    
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 8px 25px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+*/
+
+/* Cambio color del paginador al verde */
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    background-color: #009aa6;
+    border-color: #009aa6;
+}
+
+.pagination > li > a, .pagination > li > span {
+    color: #009aa6;
+}
+
+
+/* LEFTBAR BANNERS*/
+
+.leftbar_banner {
+    padding: 10px 0px 30px 0px;
+    text-align: center;
+}
+
+/*
+------------------------------------
+POP UPS
+------------------------------------
+*/
+
+.panel-popup {
+    margin: 80px auto;
+    width: 80%;
+    max-width: 500px;
+    
+}
+
+.panel-popup  > .panel-body {
+    margin: 10px 15px 20px;
+    
+}
+
+/* success */
+
+.border-success {
+    border-color: #9d102d;
+}
+
+.heading-success {
+    background-color: #9d102d;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.heading-success > .close_modal {
+    color: #ffffff;
+    float:right;
+} 

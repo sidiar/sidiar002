@@ -1,0 +1,154 @@
+id,parent_id,nombre,orden,continente_id
+2371,-1,"Francia",0,4
+2372,2371,"île de France",0,-1
+2373,-1,"Estados Unidos",0,2
+2374,2373,"New York",0,-1
+2375,-1,"Canadá",0,2
+2376,2375,"Ontario",0,-1
+2377,-1,"Reino Unido",0,4
+2378,2377,"Londres",0,-1
+2379,2377,"Oxford",0,-1
+2380,-1,"India",0,3
+2381,2380,"Calcuta",0,-1
+2382,-1,"España",0,4
+2383,2382,"País Vasco",0,-1
+2384,-1,"Nigeria",0,1
+2385,2384,"Abuja",0,-1
+2386,-1,"Brasil",0,2
+2387,2386,"Rio de Janeiro",0,-1
+2388,-1,"Jordania",0,3
+2389,2388,"Amman",0,-1
+2390,-1,"Australia",0,5
+2391,2390,"Melbourne",0,-1
+2392,2373,"Houston",0,-1
+2393,2373,"Los Angeles",0,-1
+2394,2373,"California",0,-1
+2395,2373,"Maryland",0,-1
+2396,2373,"Connecticut",0,-1
+2397,2382,"Mundo",0,-1
+2398,2373,"Indiana",0,-1
+2399,-1,"Chile",0,2
+2400,2399,"Santiago",0,-1
+2401,2373,"Michigan",0,-1
+2402,2373,"Massachusetts",0,-1
+2403,2382,"Galicia",0,-1
+2404,2382,"Madrid",0,-1
+2405,-1,"Argentina",0,2
+2406,2405,"-",0,-1
+2407,-1,"Dinamarca",0,4
+2408,2407,"Hovedstaden",0,-1
+2409,2382,"Castilla y Leon, Madrid",0,-1
+2410,2382,"Catalunya",0,-1
+2411,2382,"Valencia",0,-1
+2412,2373,"Missouri",0,-1
+2413,2371,"Alsacia",0,-1
+2414,2382,"Castilla y Leon",0,-1
+2415,2382,"Islas Baleares",0,-1
+2416,2382,"Castilla la Mancha",0,-1
+2417,2382,"Asturias",0,-1
+2418,2382,"Andalucía",0,-1
+2419,2382,"Aragón",0,-1
+2420,2382,"Navarra",0,-1
+2421,-1,"Catalunya",0,4
+2422,-1,"México",0,2
+2423,2422,"Cuernavaca",0,-1
+2424,2422,"Michoacán de Ocampo",0,-1
+2425,2422,"México DF",0,-1
+2426,2422,"Oaxaca de Juárez",0,-1
+2427,2422,"Jalisco",0,-1
+2428,2422,"Nuevo León",0,-1
+2429,2422,"Alzate",0,-1
+2430,2382,"Cantabria",0,-1
+2431,2373,"Colorado",0,-1
+2432,-1,"Kenia",0,1
+2433,2432,"Nairobi",0,-1
+2434,2375,"Quebec",0,-1
+2435,2380,"Mumbai",0,-1
+2436,2373,"Missisippi",0,-1
+2437,2380,"Nueva Delhi",0,-1
+2438,-1,"Filipinas",0,3
+2439,2438,"Manila",0,-1
+2440,-1,"Alemania",0,4
+2441,2440,"Eichstetten am Kaiserstuhl",0,-1
+2442,2373,"Arizona",0,-1
+2443,-1,"Hungría",0,4
+2444,2443,"Budapest",0,-1
+2445,2380,"Madurai",0,-1
+2446,2390,"Nueva Gales del Sur",0,-1
+2447,2440,"Hannover",0,-1
+2448,-1,"Suiza",0,4
+2449,2448,"Zürich",0,-1
+2450,2375,"Vancouver",0,-1
+2451,2373,"Minnesota",0,-1
+2452,2371,"Loire",0,-1
+2453,2405,"Santa Fe",0,-1
+2454,2373,"Washington DC",0,-1
+2455,-1,"Nicaragua",0,2
+2456,2455,"Managua",0,-1
+2457,2373,"Texas",0,-1
+2458,2373,"Carolina del Norte",0,-1
+2459,2373,"Wisconsin",0,-1
+2460,-1,"Egipto",0,1
+2461,2460,"Cairo",0,-1
+2462,2377,"Surrey",0,-1
+2463,2373,"Virginia",0,-1
+2464,2373,"Nueva Jersey",0,-1
+2465,-1,"Paraguay",0,2
+2466,2465,"Gran Asunción",0,-1
+2467,2377,"Essex",0,-1
+2468,2373,"Carolina del Sur",0,-1
+2469,2377,"Hampshire",0,-1
+2470,-1,"China",0,3
+2471,2470,"Hong Kong",0,-1
+2472,2377,"Sudoeste de Inglaterra",0,-1
+2473,2377,"West Midlands",0,-1
+2474,2377,"Manchester",0,-1
+2475,-1,"Ecuador",0,2
+2476,2475,"Guayaquil",0,-1
+2477,-1,"Bélgica",0,4
+2478,2477,"Bruselas",0,-1
+2479,2377,"Shropshire",0,-1
+2480,2377,"Leicester",0,-1
+2481,2440,"Berlin",0,-1
+2482,2371,"Aquitania",0,-1
+2483,2371,"Marseilla",0,-1
+2484,2390,"Queensland",0,-1
+2485,2377,"Escocia",0,-1
+2486,2440,"Renania del Norte-Westfalia",0,-1
+2487,2380,"Kishangarh",0,-1
+2488,2373,"Pennsylvania",0,-1
+2489,-1,"República Checa",0,4
+2490,2489,"Praga",0,-1
+2491,-1,"Irlanda",0,4
+2492,2491,"Galway",0,-1
+2493,-1,"Colombia",0,2
+2494,2493,"Bogotá",0,-1
+2495,2380,"Maharashtra",0,-1
+2496,2375,"Ottawa",0,-1
+2497,-1,"Hong Kong",0,3
+2498,2497,"Wong Tai Sin",0,-1
+2499,-1,"Sudáfrica",0,1
+2500,2499,"Cape Town",0,-1
+2501,-1,"Italia",0,4
+2502,2501,"Lacio",0,-1
+2503,2373,"Oregon",0,-1
+2504,2373,"Illinois",0,-1
+2505,2501,"Lombardía",0,-1
+2506,2377,"Lancashire",0,-1
+2507,2405,"Lomas de Zamora",0,-1
+2508,2377,"Henfield",0,-1
+2509,2373,"Maine",0,-1
+2510,2377,"Kent",0,-1
+2511,2377,"Cambridgeshire",0,-1
+2512,-1,"Países Bajos, Holanda",0,4
+2513,2512,"Utrecht",0,-1
+2514,2373,"Vermont",0,-1
+2515,2432,"Provincia Occidental",0,-1
+2516,2373,"Georgia",0,-1
+2517,-1,"Ethiopia",0,1
+2518,2517,"Addis Ababa",0,-1
+2519,-1,"Suecia",0,4
+2520,2519,"Estocolmo",0,-1
+2521,2373,"Bay Area",0,-1
+2522,2373,"Chicago",0,-1
+2523,2373,"Twin Cities",0,-1
